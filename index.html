@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora UVI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora UVI</h1>
+    <div class="date-container">
+      <label for="fechaInicio">Fecha de inicio:</label>
+      <input type="date" id="fechaInicio">
+      <label for="fechaFin">Fecha de fin:</label>
+      <input type="date" id="fechaFin">
+      <button id="calcularBtn">Mostrar Valor UVI</button>
+    </div>
+    <div class="date-today">
+      <p id="fechaHoy"></p>
+    </div>
+    <div class="uvi-container">
+      <h2>Valores UVI</h2>
+      <table id="tablaUVI">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Importe</th>
+          </tr>
+        </thead>
+        <tbody id="tablaBody"></tbody>
+      </table>
+    </div>
+    <div id="resultId"></div>
+    <script src="uvi.js"></script>
+  </div>
+</body>
+</html>
+
